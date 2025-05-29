@@ -13,8 +13,11 @@
             margin: 0;
             padding: 0;
         }
+        html{
+            scroll-behavior: smooth;
+        }
         body{
-            background-color: rgb(0, 0, 31);
+            background-color: rgb(42, 26, 186);
             font-family: "Poppins", sans-serif;
         }
         nav{
@@ -22,7 +25,7 @@
             justify-content: space-between;
             background-color: rgb(0, 0, 59);
             min-height: 10vh;
-            min-width: 100vh;
+            min-width: 110vh;
 
         }
         nav .logo{
@@ -111,25 +114,17 @@ section li{
     text-decoration: none;
     color: white;
 }
-footer{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-footer input{
+
+footer .data{
     height: 10rem;
     width: 10rem;
     border-radius: 2rem;
 }
-.foot-text{
-    color: white;
-    text-align: center;
-}
+
 button{
-    margin-top: 15rem;
+   
     background-color: white;
-    color: black;
+    color: rgb(255, 255, 255);
     border-radius: 0.7rem;
 }
 .end{
@@ -144,6 +139,30 @@ button{
     align-items: center;
    height: 24rem;
 }
+.sec-end div{
+    min-height: 10vh;
+    min-width: 110vh;
+}
+.sec-end img{
+    display:inline;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    height: 3rem;
+    width: 3rem;
+    margin: auto; 
+}
+.foot-text{
+    color: white;
+}
+#button{
+    color: white;
+    background-color: black;
+    border-radius: 21px;
+    height: 2rem;
+    width: 5rem;
+}
+
 </style>
 </head>
 <body >
@@ -153,10 +172,11 @@ button{
         </div>
         <div class="navmenu">
             <ul>
-                <a href=""><li>College Tips Gallery</li></a>
-                <a href=""><li>Projects</li></a>
-                <a href=""><li>Education</li></a>
-                <a href=""><li>Contact me</li></a>
+                <a href="index2.html"><li>College Tips Gallery</li></a>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="#education"><li>Education</li></a>
+                <a href="#contact-me"><li>Contact me</li></a>
+                <a href="Black And White Minimalist Professional Resume A4.pdf" download=""><li>Download my cv</li></a>
             </ul>
         </div>
     </nav>
@@ -186,7 +206,7 @@ button{
             <hr>
         
         <div class="row">
-  <div class="column"><h3>Education</h3>
+  <div class="column" id="education"><h3>Education</h3>
     <H3>10TH</H3>
     <p>91%</p>
     <H3>12TH</H3>
@@ -194,28 +214,37 @@ button{
     <H3>Currently Pursuing BCA</H3>
     <p>6.6 CGPA</p>
 </div>
-  <div class="column"><h3>Projects</h3>
-    <a href=""><li>Stone-Paper-Scissors Game</li></a>
-     <a href=""><li>TIC-TAC-TOE GAME</li></a>
-     <a href=""><li>College Tips Gallery</li></a>
+  <div class="column" id="projects"><h3>Projects</h3>
+    <a href="index112.html"><li>Stone-Paper-Scissors</li></a>
+     <a href="index23.html"><li>TIC-TAC-TOE GAME</li></a>
+     <a href="index2.html"><li>College Tips Gallery</li></a>
      
 </div>
     <div class="column"><h3>Experience</h3>
         <p>Fresher yet.</p>
 </div>
     </section>
-     <h1 class="foot-text">Here you can text me.</h1>
+     <h1 class="foot-text">Here you can contact me.</h1>
     <footer>
        
         <form action="">
-            <input type="text">
+            <input type="text" class="data">
+             <input type="button" id="button" 
+            onclick="send()" value="Click Here!">
         </form>
-       <button>Submit</button>
+      
     </footer>
-     
-
+    <div class="sec-end" id="contact-me">
+        <a href="mailto:imankitrana2005@gmail.com"><img src="pngwing.com (1).png" alt="" ></a>
+        <a href="https://github.com/Ankitrana2005/portfolio"><img src="pngwing.com (2).png" alt="" ></a>
+        <a href="https://www.linkedin.com/in/ankit-rana-5988512ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="pngwing.com.png" alt="" ></a>
+    </div>
       <p class="end"> All rights Reserved to ankit rana&#169 2025 my portfolio.</p>
     <script>
+        
+        function send() {
+            alert("your form is sumitted");
+        }
     var typed = new Typed('#element', {
       strings: ['A video editor', 'A Web designer.'],
       typeSpeed: 50,
