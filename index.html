@@ -3,44 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exile&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="left">Ankit's Portfolio</div>
-             <div class="right">
-                <ul>
+<link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Exile&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0, 0, 31);
+            font-family: "Poppins", sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(0, 0, 59);
+            min-height: 10vh;
+            min-width: 100vh;
 
-                   <li><a href="projects.html">Projects</a></li>
-                   <li><a href="contactme.html">Contact Me</a></li>
-                </ul>
-             </div>
-        </nav>
-    </header>
+        }
+        nav .logo{
+            margin-left: 3rem;
+            height: 4rem;
+        }
+       .navmenu a{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        float: left;
+        margin: 2rem;
+        text-decoration: none;
+        color:white ;
+        list-style: none;
+       }
+       nav img{
+        margin-left: 3rem;
+        max-width: 100%;
+        max-height: 15vh;
+       }
+       .navmenu a:hover{
+        background-color: navy;
+        border-radius:1rem ;
+       }
+       main{
+         display: flex;
+            justify-content: space-between;
+            background-color: rgb(241, 233, 233);
+            min-height: 10vh;
+            min-width: 110vh;
+       }
+       main img{
+         position: relative;
+         min-width: 100%;
+    float:right;
+    margin-top:16px;
+       }
+       .bg-img{
+        float: right;
+       }
+       .msg{
+        margin-top: 7rem;
+        margin-left: 6rem;
+        font-size: 2rem;
+        color: rgb(0, 0, 0);
+       }
+       span{
+        color: rgb(91, 91, 255);
+       }
+       section{
+        background-color: rgb(9, 9, 132);
+          min-height: 50vh;
+            min-width: 110vh;
+       }
+       section div{
+        color: white;
+       }
+       section h1{
+        color: white;
+       }
+       .column {
+  float: left;
+  width: 25%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.sec-text{
+    text-align: center;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section li{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+footer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer input{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 2rem;
+}
+.foot-text{
+    color: white;
+    text-align: center;
+}
+button{
+    margin-top: 15rem;
+    background-color: white;
+    color: black;
+    border-radius: 0.7rem;
+}
+.end{
+    color: white;
+    text-align: center;
+    font-size: 0.5rem;
+}
+.img{
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   height: 24rem;
+}
+</style>
+</head>
+<body >
+    <nav>
+        <div class="logo">
+            <img src="logo.png" >
+        </div>
+        <div class="navmenu">
+            <ul>
+                <a href=""><li>College Tips Gallery</li></a>
+                <a href=""><li>Projects</li></a>
+                <a href=""><li>Education</li></a>
+                <a href=""><li>Contact me</li></a>
+            </ul>
+        </div>
+    </nav>
     <main>
-        <section class="first-section">
-            <div class="left-section">
-                Hye! My name is <span class="blue">"Ankit Rana".</span> 
-                <div>And I am a passionate <span class="blue"></span></div>
-                 <span id="element"></span>
-            </div>
-            <div class="right-section">
-                <img src="c0211f2ec52cfc99f3d0af9c0b10782d.png" alt="">
-            </div>
-        </section>
+        <div class="msg">
+            <h1>Hey! I am <span>Ankit Rana.</span></h1>
+            <p> I am passionate in <span>web devlopment</span></p>
+            <p>and sometimes <span id="element"></span></p>
+        </div>
+         <div class="bg-img">
+            <img src="WhatsApp_Image_2025-05-29_at_8.37.30_AM-removebg-preview.png" alt="">
+        </div>
+
     </main>
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <section>
+        <h1 class="sec-text">About Me</h1>
+        <div class="about">
+            <img src="WhatsApp_Image_2025-05-29_at_9.02.46_AM-removebg-preview.png" alt="" class="img">
+            </div>
+            <div class="about-text">
+                <p> hey! my name is ankit rana . I belong to a beautiful state "himachal pradesh", i live in smallest distt. Hamirpur.
+            i studied at govt. college hamirpur. Currently pursuing BCA. I have great skills in HTML, CSS , JS that help me to understand the logic behind the website making.
+           </p>
+            </div>
+            <br>
+            <br><br>
+            <hr>
+        
+        <div class="row">
+  <div class="column"><h3>Education</h3>
+    <H3>10TH</H3>
+    <p>91%</p>
+    <H3>12TH</H3>
+    <p>71%(PCM)</p>
+    <H3>Currently Pursuing BCA</H3>
+    <p>6.6 CGPA</p>
+</div>
+  <div class="column"><h3>Projects</h3>
+    <a href=""><li>Stone-Paper-Scissors Game</li></a>
+     <a href=""><li>TIC-TAC-TOE GAME</li></a>
+     <a href=""><li>College Tips Gallery</li></a>
+     
+</div>
+    <div class="column"><h3>Experience</h3>
+        <p>Fresher yet.</p>
+</div>
+    </section>
+     <h1 class="foot-text">Here you can text me.</h1>
+    <footer>
+       
+        <form action="">
+            <input type="text">
+        </form>
+       <button>Submit</button>
+    </footer>
+     
+
+      <p class="end"> All rights Reserved to ankit rana&#169 2025 my portfolio.</p>
     <script>
     var typed = new Typed('#element', {
-      strings: ['Web Developer.', 'Video Editor.','Web Designer.'],
+      strings: ['A video editor', 'A Web designer.'],
       typeSpeed: 50,
     });
   </script>
-    
+</body>
 </body>
 </html>
