@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    background-image:url(fantasy-landscape-floating-islands-illustration.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    background-color: #FF9F00;
+    color: white;
+    height: 6rem;
+    line-height: 5rem;
+    font-family:garamond ;
+    transition: 1s all ease-in-out;
+}
+.choice{
+   
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.choice:hover{
+    background-color:#309898;
+    cursor: pointer ;
+    transition: 0.3s all ease-in-out;
+}  
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+   border-radius: 50%;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+   
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 5rem;
+    margin-top: 12px;
+}
+#user-score, #comp-score{
+    font-size: 4rem;
+    
+
+}
+.msg-container{
+     margin-top: 5rem  ;
+    
+}
+#msg{
+    background-color: black;
+    color: white;
+    display: inline;
+    font-size:2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    
+    
+}
+
